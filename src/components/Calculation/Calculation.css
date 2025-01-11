@@ -1,0 +1,159 @@
+.calculationWrapper{
+    width: 350px;
+    height: 100%;
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 30px;
+    gap: 20px;
+    position: relative;
+}
+
+.calcHeader{
+    font-size: 30px;
+    padding-bottom: 15px;
+    width: 100%;
+    border-bottom: 1px dashed #B2B2B2;
+    text-align: center;
+}
+
+.incomeBox{
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    background-color: #FFFDE7;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.03);
+    padding: 14px 0;
+}
+
+.incomeBox p:first-child{
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.incomeBox p:last-child{
+    font-size: 30px;
+    /* color: #51D289; */
+}
+
+
+
+.expenseState{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #B2B2B2;
+    padding-bottom: 20px;
+    /* gap: 30px; */
+}
+
+.available{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    background-color: #1E1E1E;
+    border-radius: 4px;
+    color: #FFFDE7;
+    gap: 4px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.available p{
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.available span{
+    font-size: 25px;
+    color: #51D289;
+}
+
+.spent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    background-color: #1E1E1E;
+    border-radius: 4px;
+    color: #FFFDE7;
+    gap: 4px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.spent p{
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.spent span{
+    font-size: 25px;
+    color: #FFE600;
+}
+
+/* button styling */
+
+.resetButton{
+    width: 100%;
+    min-height: 50px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #FFE600;
+    color: black;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+/* progress box styling*/
+
+.progressTextBox{
+    padding: 75px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+/* plus expense button styling */
+
+.plusExpense{
+    cursor: pointer;
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 100%;
+    background-color: #FFE600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 900;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+}
+
+
+@media (max-width: 1100px){
+    .spent span, .available span{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 900px){
+    .calculationWrapper{
+        width: 100%;
+    }
+}

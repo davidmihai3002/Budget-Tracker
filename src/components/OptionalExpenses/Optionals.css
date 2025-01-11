@@ -1,0 +1,149 @@
+.fixedExpensesWrapper{
+    width: 450px;
+    height: 100%;
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 30px;
+    gap: 20px;
+}
+
+.optionalsHeader{
+    font-size: 30px;
+    padding-bottom: 15px;
+    width: 100%;
+    border-bottom: 1px dashed #B2B2B2;
+    text-align: center;
+}
+
+.fixedExpenses{
+    width: 100%;
+    background-color: #FFFDE7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0 0 0;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.03);
+    gap: 30px;
+
+
+}
+
+.fixedExpenses p:first-child{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.fixedBoxIndex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    gap: 90px;
+    padding-bottom: 20px;
+}
+
+.fixedBox1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fixedBox1 p{
+    font-weight: 600;
+}
+
+.iconImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #51D289;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.fixedExpensesButton{
+    border: none;
+    width: 75px;
+    border-radius: 100px;
+    background-color: #51D289;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+/* .fixedExpensesButton::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 100px;
+} */
+
+
+.goals{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.goals p:first-child{
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px dashed #B2B2B2;
+}
+
+.goals p:last-child{
+    padding: 10px 0 10px 10px;
+    height: fit-content;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    /* transition: .5s; */
+}
+
+.goals p:last-child::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 1.5%;
+    background-color: #51D289;
+    transition: .5s;
+    z-index: -1;
+}
+
+.goals p:last-child:hover::before{
+    width: 100%;
+    transition: .5s;
+}
+
+@media (max-width: 900px){
+    .fixedExpensesWrapper{
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 900px){
+    .fixedBoxIndex{
+        gap: 10px;
+    } 
+}

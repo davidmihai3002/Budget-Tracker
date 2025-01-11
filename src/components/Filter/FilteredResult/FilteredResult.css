@@ -1,0 +1,76 @@
+.filteredResult{
+    width: 100%;
+    max-height: fit-content;
+    border-top: 1px dashed white;
+    padding-top: 20px;
+    
+}
+
+.expenseDetailsBox{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px ridge #FFE600;
+}
+
+.expenseSubBox{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.expenseImage{
+    width: 54px;
+    height: 54px;
+}
+
+.expenseSubTextBox{
+    color: white;
+}
+
+.expenseSubTextBox p:nth-child(1){
+    font-size: 19px;
+}
+
+.expenseSubTextBox p:nth-child(2), .expenseSubTextBox p:nth-child(3){
+    font-size: 12.5px;
+}
+
+.expensePrice{
+    font-size: 27px;
+    color: white;
+}
+
+.actionButtons{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.editItemButton, .deleteItemButton{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.editItemButton{
+    color: #51D289;
+}
+
+.deleteItemButton{
+    color: red;
+}

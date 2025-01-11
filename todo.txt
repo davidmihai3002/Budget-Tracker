@@ -1,0 +1,6 @@
+Termina partea de Filter cu butonul de edit
+
+Optimizeaza tot pentru mobil
+
+sa nu uiti sa adaugi butonul de adaugat expense cu plus pentru mobil (nu vei edita NewExpense, vei importa NewExpense in alta componenta, intr-un buton cu +)
+

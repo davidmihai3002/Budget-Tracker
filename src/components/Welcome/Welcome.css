@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.hide{
+    display: none;
+}
+
+.welcomeWrapper{
+    width: 100vw;
+    display: flex;
+    gap: 0;
+}
+
+.welcomeTextBox{
+    background-color: #FFFDE6;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+.welcomeTextBox h1{
+    font-size: 45px;
+    font-weight: 300;
+    font-style: italic;
+    padding: 0 50px;
+    width: 100%;
+    height: fit-content;
+    letter-spacing: 3px;
+    line-height: 150%;
+}
+
+.welcomeImage{
+    width: 100%;
+    height: 70%;
+}
+
+/* form styling */
+
+form{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label{
+    font-size: 25px;
+    color: #fff;
+    transition: .4s;
+    width: 100%;
+    text-align: center;
+}
+
+form input{
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+    padding: 10px;
+    height: 30px;
+    outline: none;
+    color: #FFE600;
+    font-size: 20px;
+    text-align: center;
+}
+
+form input.clickedInput{
+    border-bottom: 2px solid #51D289;
+}
+
+form label.clicked{
+    color: #FFE600;
+    transition: .4s;
+    text-align: left;
+    font-size: 17px;
+}
+
+.formWrapper{
+    background-color: #1A1A1A;
+    width: 50vw;
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formWrapper.fullFormWidth{
+    width: 100vw;
+}
+
+.formHeader{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.formHeader span{
+    color: #51D289;
+}
+
+.formButton{
+    background-color: #FFE600;
+    color: black;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 50px;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+    .formWrapper{
+        padding: 0 15px;
+    }
+    .formHeader{
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 500px){
+    .formHeader{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 350px){
+    form label{
+        font-size: 20px;
+    }
+}

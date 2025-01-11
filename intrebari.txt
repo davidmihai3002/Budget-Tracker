@@ -1,0 +1,4 @@
+1. Problema cu state-ul butonului de new expense, cand dau click pe buton stateul devine true, dar cand apas pe close, state-ul nu redevine false, chiar daca eu il pun sa se schimba, probabil din cauza ca vine din props
+
+2. Cum pot face routing-ul cu Welcome Page?
+R: fac Welcome pagina principala 

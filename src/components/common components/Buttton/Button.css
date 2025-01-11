@@ -1,0 +1,19 @@
+.headerButton{
+    background-color: rgba(255, 230, 0, .75);
+    color: black;
+    max-width: fit-content;
+    height: fit-content;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s;
+    white-space: nowrap;
+}
+
+.headerButton:hover{
+    background-color: rgba(255, 230, 0, 1);
+    transition: .3s;
+}
