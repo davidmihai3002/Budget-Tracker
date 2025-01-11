@@ -1,11 +1,5 @@
 {
   "users": [
-    {
-      "id": "ec11",
-      "name": "David",
-      "income": "10000",
-      "savings": "1000"
-    }
   ],
   "expenses": []
 }
