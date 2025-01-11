@@ -5,7 +5,7 @@ import Homepage from "./Homepage/Homepage";
 
 const Dashboard = () =>{
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route path="/" element={<Welcome />} />
             
